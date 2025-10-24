@@ -98,7 +98,7 @@ widgets:
       class_name: "shortcuts-tips-widget"
       exec_options:
         run_cmd: "C:\\Users\\higor\\.config\\yasb\\shortcuts_all.bat"
-        run_interval: 10000
+        run_interval: 300000
         return_format: "string"
         hide_empty: false
         use_shell: true

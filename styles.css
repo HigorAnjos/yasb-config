@@ -42,6 +42,29 @@ QToolTip {
 .icon {
     font-size: 14px;
 }
+
+/* Widget de dicas de atalhos */
+.shortcuts-tips-widget .widget-container {
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin: 0 4px;
+    border: none;
+    outline: none;
+}
+
+.shortcuts-tips-widget .label {
+    color: var(--yellow) !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    border: none;
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 .widget .label {
     padding: 0px 2px;
 }
@@ -461,3 +484,133 @@ QToolTip {
 .note-input:focus {
     border: 1px solid #89b4fa;
 }
+.disk-widget {
+    padding: 0 6px 0 6px;
+}
+.disk-group {
+    background-color:rgba(17, 17, 27, 0.4); 
+}
+.disk-group-row {
+    min-width: 220px;
+    max-width: 220px;
+    max-height: 40px;
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0);
+}
+.disk-group-row:hover {
+    background-color:rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.disk-group-label-bar{
+    max-height:8px;
+    border:0px solid rgba(128, 128, 128, 0);
+    background-color: rgba(137, 180, 250, 0.1);
+    border-radius: 4px;
+}
+.disk-group-label-bar::chunk{
+    background-color: rgba(61, 135, 255, 0.3);
+    border-radius: 4px;
+}
+.disk-group-label {
+    font-size: 10px;
+}
+.disk-group-label-size {
+    font-size: 10px;
+    color: #666879;
+}
+.language-menu {
+    background-color: rgba(17, 17, 27, 0.4);
+    min-width: 300px;
+}
+.language-menu .header {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 12px;
+    background-color: rgba(17, 17, 27, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.language-menu .footer {
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px;
+    margin-top: 2px;
+    color: #9399b2;
+    background-color: rgba(17, 17, 27, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.language-menu .footer:hover {
+    background-color: rgba(36, 36, 51, 0.6);
+    color: #fff;
+}
+.language-menu .language-item {
+    padding: 6px 12px;
+    margin: 2px 4px;
+}
+.language-menu .language-item.active {
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+.language-menu .language-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.language-menu .language-item.active:hover {
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+.language-menu .language-item .code {
+    font-weight: 900;
+    font-size: 14px;
+    min-width: 40px;
+    text-transform: uppercase;
+}
+.language-menu .language-item .icon {
+    font-size: 16px;
+    margin-right: 8px;
+    color: #fff;
+}
+.language-menu .language-item .name {
+    font-weight: 600;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+.language-menu .language-item .layout {
+    font-weight: 600;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+}
+.gpu-widget {}
+.gpu-widget.your_class {} /* If you are using class_name option */
+.gpu-widget .widget-container {}
+.gpu-widget .widget-container .label {}
+.gpu-widget .widget-container .label.alt {}
+.gpu-widget .widget-container .icon {}
+.gpu-widget .label.status-low {}
+.gpu-widget .label.status-medium {}
+.gpu-widget .label.status-high {}
+.gpu-widget .label.status-critical {}
+/* GPU progress bar styles if enabled */
+.gpu-widget .progress-circle {} 
+.microphone-widget {}
+.microphone-widget.your_class {} /* If you are using class_name option */
+.microphone-widget .widget-container {}
+.microphone-widget .label {}
+.microphone-widget .label.alt {}
+.microphone-widget .icon {}
+.microphone-widget .label.muted {}
+.microphone-widget .icon.muted {}
+.microphone-slider {
+    border: none;
+}
+.microphone-slider::groove {}
+.microphone-slider::handle{} 
+.microphone-menu {
+    background-color:rgba(17, 17, 27, 0.4); 
+}
+
+/* Microphone progress bar styles if enabled */
+.microphone-widget .progress-circle {} 

@@ -32,14 +32,15 @@ bars:
     widgets:
       left: [
         "home",
-        "komorebi_workspaces",
+        "glazewm_workspaces",
+        "glazewm_tiling_direction",
         "apps",
         "notes",
         "shortcuts_tips",
       ]
       center: [
         "taskbar",
-        "clock", 
+        # "clock", 
       ]
       right: [
         "cpu",
@@ -450,3 +451,42 @@ widgets:
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
+  glazewm_tiling_direction:
+    type: "glazewm.tiling_direction.GlazewmTilingDirectionWidget"
+    options:
+      horizontal_label: "\udb81\udce1"
+      vertical_label: "\udb81\udce2"
+      btn_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
+  glazewm_workspaces:
+    type: "glazewm.workspaces.GlazewmWorkspacesWidget"
+    options:
+      offline_label: "GlazeWM Offline"
+      hide_empty_workspaces: true
+      hide_if_offline: false
+      enable_scroll_switching: true
+      btn_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
+      app_icons: 
+        enabled_populated: false
+        enabled_active: false
+        size: 16
+        max_icons: 0
+        hide_label: false
+        hide_duplicates: false
+        hide_floating: false
+      animation: false
+
+      # By default workspace names are fetched from GlazeWM and "display_name" option takes priority over "name".
+      # However, you can customize populated and empty labels here using {name} and {display_name} placeholders if needed.
+      # {name} will be replaced with workspace name (index) from GlazeWM.
+      # {display_name} will be replaced with workspace display_name from GlazeWM.
+
+      # populated_label: "{name} {display_name} \uebb4"
+      # empty_label: "{name} {display_name} \uebb5"
